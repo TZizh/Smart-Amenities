@@ -1,0 +1,40 @@
+{% extends "base.html" %} {% block title %}Home{% endblock %} {% block content
+%}
+<div class="container-fluid bg-dark" xmlns="http://www.w3.org/1999/html">
+  <h1 align="center text-muted">Create Booking</h1>
+  </br>
+  </br>
+</div>
+
+<div class="container" align="center">
+  <div class="card border-dark mb-3" style="max-width: 18rem;" align="center">
+    <div class="card-header bg-secondary border-secondary">Option 1</div>
+      <div class="card-body text-muted bg-dark">
+        <h5 class="card-title"></h5>
+        <p class="card-text"></p>
+      </div>
+      <div class="card-footer bg-secondary border-dark bg-dark">
+          <form method="POST">
+            <div align="center">
+              <a class="btn btn-secondary text-dark" href="/bookings" role="button">Open</a>
+            </div>
+          </form>
+      </div>
+  </div>
+  <div class="card border-dark mb-3" style="max-width: 18rem;" align="center">
+    <div class="card-header bg-secondary border-secondary">View Destinations</div>
+      <div class="card-body text-muted bg-dark">
+        <h5 class="card-title">Make New Booking</h5>
+        <p class="card-text">Click the button to make a new booking and reserve your spot from our registred destinations!</p>
+      </div>
+      <div class="card-footer bg-secondary border-dark bg-dark">
+          <form method="POST">
+            <div align="center">
+              <a  class="btn btn-secondary text-dark" href="/destinations" role="button">Open</a>
+            </div>
+          </form>
+      </div>
+  </div>
+</div>
+
+{% endblock %}
